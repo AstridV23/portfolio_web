@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="images/icono1.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+    <title>Mi Portfolio Web</title>
+</head>
+<body>
+    <!-- SECCION INICIO -->
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <h1>/VA/</h1>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
+                            <li><a href="#servicios" onclick="seleccionar(this)">SERVICIOS</a></li>
+                            <li><a href="#portfolio" onclick="seleccionar(this)">PORTFOLIO</a></li>
+                            <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
+                        </ul>
+                    </nav>
+
+                    <!-- ICONOS DEL MENU RESPONSIVE -->
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+
+                    <!-- ICONOS DE LA REDES SOCIALES -->
+                    <div class="redes">
+                        <a href="https://www.linkedin.com/in/astrid-vi%C3%B1uela-3b191a285/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/ast_vinu" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://github.com/AstridV23" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+            </header>
+
+            <div class="presentacion">
+                <p class="bienvenida">Bienvenidos</p>
+                <h1>Soy <span>Viñuela Astrid</span>, desarroladora Web</h1>
+                <p class="descripcion">Aquí encontrarás ejemplos de mi trabajo y servicios como desarrolladora web. Con enfoque en calidad y usabilidad, colaboro con mis clientes para crear soluciones web impactantes. ¡Disfruta tu visita y contáctame para llevar tus proyectos al siguiente nivel"
+                </p>
+                <a href="#portfolio">Ir a Proyectos</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi">
+        <div class="contenedor-foto">
+            <img src="images/fotomia.jpeg" alt="">
+        </div>
+        <div class="sobremi">
+            <p class="titulo-seccion">Sobre Mi</p>
+            <h2>Hola, soy <span>Viñuela Astrid</span></h2>
+            <h3>Desarrolladora Web</h3>
+            <p>Como estudiante universitaria con dos años de experiencia, me apasiona la programación y he adquirido especialización en una amplia gama de lenguajes, que van desde Java, C y C#, hasta HTML, CSS y JavaScript. Además, poseo competencias en el uso de GIT y bases de datos, actualmente me focalizo en el desarrollo de aplicaciones de escritorio con .NET. Aunque mi enfoque principal está en el desarrollo de aplicaciones de escritorio, también poseo habilidades en el desarrollo web. Me esfuerzo por garantizar la calidad y la usabilidad en todos mis proyectos, y siempre estoy en búsqueda de oportunidades para aprender y crecer como profesional en este campo en constante evolución.</p>
+            <a href="#">Descargar CV</a>
+        </div>
+    </section>
+
+    <!-- SECCION SERVICIOS -->
+    <section id="servicios">
+        <h3 class="titulo-seccion">MIS SERVICIOS</h3>
+        <div class="fila">
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4>Desarrollo Web</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Desarrollo Frontend</li>
+                    <li>Desarrollo Backend</li>
+                    <li>Diseño responsivo</li>
+                </ul>
+                <p>Ofrezco soluciones completas de desarrollo web, abarcando tanto el frontend como el backend. Mi especialización incluye el diseño responsivo para garantizar una experiencia óptima en todos los dispositivos.</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-laptop"></i></span>
+                <h4>Desarrollo de Aplicaciones de Escritorio</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>.NET</li>
+                    <li>Mejora de Rendimiento</li>
+                    <li>Escalabilidad</li>
+                </ul>
+                <p>Como desarrolladora especializada en aplicaciones de escritorio con .NET, puedo crear soluciones robustas y eficientes que satisfagan las necesidades específicas de tu negocio, garantizando la usabilidad y el rendimiento óptimo.</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-mug-hot"></i></span>
+                <h4>Programación en Java</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Desarrollo de Apps</li>
+                    <li>Optimización</li>
+                    <li>Seguridad</li>
+                </ul>
+                <p>Con experiencia en el desarrollo de aplicaciones Java, puedo crear soluciones seguras y eficientes que cumplan con los estándares de calidad más exigentes, optimizando el código y garantizando la seguridad de la aplicación.</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- SECCION HABILIDADES -->
+    <div class="contenedor-skills" id="skills">
+        <h1>HABILIDADES</h1>
+
+        <div class="skill"> <!-- hab 1 -->
+            <div class="info">
+                <p><span class="lista"></span>Java</p>
+                <span class="porcentaje">95%</span>
+            </div>
+            <div class="barra">
+                <div id="java" class=""></div>
+            </div>
+        </div>
+
+        <div class="skill"> <!-- hab 2 -->
+            <div class="info">
+                <p><span class="lista"></span>C#</p>
+                <span class="porcentaje">70%</span>
+            </div>
+            <div class="barra">
+                <div id="cs" class=""></div>
+            </div>
+        </div>
+
+        <div class="skill"> <!-- hab 3 -->
+            <div class="info">
+                <p><span class="lista"></span>C</p>
+                <span class="porcentaje">70%</span>
+            </div>
+            <div class="barra">
+                <div id="c" class=""></div>
+            </div>
+        </div>
+
+        <div class="skill"> <!-- hab 4 -->
+            <div class="info">
+                <p><span class="lista"></span>Base de Datos</p>
+                <span class="porcentaje">70%</span>
+            </div>
+            <div class="barra">
+                <div id="bd" class=""></div>
+            </div>
+        </div>
+
+        <div class="skill"> <!-- hab 5 -->
+            <div class="info">
+                <p><span class="lista"></span>Python</p>
+                <span class="porcentaje">90%</span>
+            </div>
+            <div class="barra">
+                <div id="py" class=""></div>
+            </div>
+        </div>
+
+        <div class="skill"> <!-- hab 6 -->
+            <div class="info">
+                <p><span class="lista"></span>HTML CSS JS</p>
+                <span class="porcentaje">75%</span>
+            </div>
+            <div class="barra">
+                <div id="dw" class=""></div>
+            </div>
+        </div>
+
+        <div class="skill"> <!-- hab 7 -->
+            <div class="info">
+                <p><span class="lista"></span>GIT</p>
+                <span class="porcentaje">75%</span>
+            </div>
+            <div class="barra">
+                <div id="git" class=""></div>
+            </div>
+        </div> <!-- Agregar más skills debajo -->
+
+    </div>
+
+    <!-- SECCION PORTAFOLIO -->
+    <section id="portfolio">
+        <h3 class="titulo-seccion">MIS PROYECTOS</h3>
+        
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="images/plantilla4.webp" alt="">
+                <div class="info">
+                    <h4>Gestión de Eventos</h4>
+                    <p>Organizador de reuniones y eventos</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="images/plantilla5.png" alt="">
+                <div class="info">
+                    <h4>SecureKey Vault</h4>
+                    <p>Crea y administra tus contraseñas</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="images/plantilla6.png" alt="">
+                <div class="info">
+                    <h4>Revisión de Vuelos y Ofertas Aéreas</h4>
+                    <p>Encuentra los vuelos más baratos y de calidad</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- SECCON CONTACTO -->
+    <section id="contacto">
+        <h3 class="titulo-seccion">Contacto</h3>
+        <div class="contenedor-contacto">
+            <div class="datos-contacto">
+                <h4>Teléfono</h4>
+                <p>+543725493207</p>
+            </div>
+            <div class="datos-contacto">
+                <h4>Correo Electrónico</h4>
+                <p>astridcarla123@gmail.com</p>
+            </div>
+            <div class="datos-contacto">
+                <h4>LinkedIn</h4>
+                <p><a href="https://www.linkedin.com/in/astrid-vi%C3%B1uela-3b191a285/" target="_blank">Mi Perfil</a></p>
+            </div>
+            <div class="datos-contacto">
+                <h4>Localidad</h4>
+                <p>Chaco - Resistencia</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION FOOTER -->
+    <footer>
+        <p>© Viñuela Astrid | 2024</p>
+        <div class="redes">
+            <a href="https://www.linkedin.com/in/astrid-vi%C3%B1uela-3b191a285/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/ast_vinu" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://github.com/AstridV23" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </div>
+    </footer>
+    
+</body>
+</html>
