@@ -13,7 +13,7 @@ html{
 }
 
 #inicio{
-    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0, .7)), url("images/fondoWeb.jpg");
+    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0, .7)), url("assets/fondoWeb.jpg");
     background-size: cover;
     background-position: center center;
     height: 100vh;
@@ -292,7 +292,7 @@ html{
 /* SECCION HABILIDADADES */
 
 .contenedor-skills{
-    background: linear-gradient(#eb5a5acc, rgba(33,16,16,.8)), url("images/fondoSkills.jpg");
+    background: linear-gradient(#eb5a5acc, rgba(33,16,16,.8)), url("assets/fondoSkills.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
