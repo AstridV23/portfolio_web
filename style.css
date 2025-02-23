@@ -469,9 +469,9 @@ html{
 }
 
 #portfolio .fila .proyecto{
-    max-width: 450px;
+    max-width: 350px;
     border: 1px solid #000;
-    margin: 0 10px;
+    margin: 0 5px;
     position: relative;
     overflow: hidden;
 }
@@ -518,8 +518,6 @@ html{
     font-size: 25px;
     text-transform: uppercase;
     color: #111135;
-    text-decoration: underline;
-    text-decoration-color: #ff507fba;
     text-decoration-thickness: 5px;
     margin-bottom: 40px; 
 }
